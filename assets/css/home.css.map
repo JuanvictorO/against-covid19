@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,iBAAiB,AAAC,CACd,KAAK,CAAE,GAAG,CACb,AAED,AAAA,iBAAiB,CAAC,EAAE,AAAC,CACjB,SAAS,CAAE,IAAI,CAClB,AAED,AAAA,iBAAiB,CAAC,CAAC,AAAC,CAChB,SAAS,CAAE,IAAI,CAClB",
+    "sources": [
+        "../scss/home.scss",
+        "../scss/_variables.scss",
+        "../scss/_mixin.scss"
+    ],
+    "names": [],
+    "file": "home.css"
+}
