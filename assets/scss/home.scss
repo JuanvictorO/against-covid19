@@ -1,7 +1,14 @@
 @import "_variables";
 @import "_mixin";
+#carousel {
+    @include tablet {
+        margin-top: 61.875px;
+    }
+}
+
 .carousel-caption {
-    color: red;
+    color: $color-2;
+    padding-bottom: 0;
 }
 
 .carousel-caption h4 {
