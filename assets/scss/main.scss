@@ -1,65 +1,69 @@
 @import "_variables";
 @import "_mixin";
 body {
-    font-family: $font;
-    // background-color: $body-color;
-    // color: $body-text-color;
+  font-family: $font;
+  background-color: $body-color;
+  // color: $body-text-color;
 }
 
 a {
-    color: $header-text-color;
-    text-decoration: none;
-    background-color: transparent;
+  color: $header-text-color;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: $color-2;
 }
 
 .navbar {
-    color: $header-text-color;
-    background-color: $header-color;
-    font-size: 19px;
-    @include tablet {
-        font-size: 18px;
-    }
+  color: $header-text-color;
+  background-color: $header-color;
+  font-size: 19px;
+  @include tablet {
+    font-size: 18px;
+  }
 }
 
 .navbar-toggler {
-    color: $color-1;
+  color: $color-1;
 }
 
 .nav-item {
-    margin-left: 40px;
-    margin-right: 40px;
-    @include notebook {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    @include mobile {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 0 !important;
-    }
+  margin-left: 40px;
+  margin-right: 40px;
+  @include notebook {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @include mobile {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0 !important;
+  }
 }
 
 .nav-text {
-    margin-top: 12px;
-    margin-bottom: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 #li-logo {
-    position: relative;
-    width: 200px;
+  position: relative;
+  width: 200px;
 }
 
 #logo {
-    background-color: #00587c;
-    padding: 20px 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
+  background-color: #00587c;
+  padding: 20px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .principal {
-    margin-top: 68px;
-    @include tablet {
-        margin-top: 61.875px;
-    }
+  margin-top: 68px;
+  @include tablet {
+    margin-top: 61.875px;
+  }
 }

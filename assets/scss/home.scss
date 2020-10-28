@@ -1,20 +1,24 @@
 @import "_variables";
 @import "_mixin";
 #carousel {
-    @include tablet {
-        margin-top: 61.875px;
-    }
+  @include tablet {
+    margin-top: 61.875px;
+  }
 }
 
 .carousel-caption {
-    color: $color-2;
-    padding-bottom: 0;
+  color: $color-2;
+  padding-bottom: 0;
 }
 
 .carousel-caption h4 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .carousel-caption p {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+.buttons {
+  margin-top: 80px;
 }
