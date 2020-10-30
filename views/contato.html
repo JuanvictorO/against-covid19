@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Um projeto feito para a prova de proficiência da matéria de Design Web do curso de Sistemas de informação - CEFET/NF">
+    <meta name="author" content="Juan Victor Oliveira - github.com/JuanvictorO">
+    <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.png">
+    <title>Contato - Against Covid-19</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/contato.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- py-lg-3 py-2 px-1 px-md-3 -->
+    <header id="header" class="navbar navbar-expand-lg fixed-top py-0">
+        <div class="container">
+            <div class="text-left d-lg-none">
+                <a class="nav-link" href="../index.html">
+                    <img class="img-fluid" width="150px" src="../assets/img/logo.png" alt="Logo" title="Logo">
+                </a>
+            </div>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="animated collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-lg-center text-left mr-auto ml-auto px-3 px-md-0">
+                    <li class="nav-item nav-text animated fadeIn">
+                        <a class="nav-link" href="">Prevenções</a>
+                    </li>
+                    <li class="nav-item nav-text animated fadeIn">
+                        <a href="" class="nav-link" data-toggle="modal" data-target=".quem-somos">Blog</a>
+                    </li>
+                    <li id="li-logo" class="nav-item animated fadeIn d-none d-lg-inline mx-5">
+                        <a class="nav-link" href="../index.html">
+                            <img id="logo" width="220px" src="../assets/img/logo.png" alt="Logo">
+                        </a>
+                    </li>
+                    <li class="nav-item nav-text animated fadeIn">
+                        <a class="nav-link" href="">Consulta</a>
+                    </li>
+                    <li class="nav-item nav-text animated fadeIn">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="principal color-2 text-center">
+        <img class="img-fluid" src="../assets/img/contato2.png" alt="Envie-nos uma mensagem">
+        <h2>FALE CONOSCO</h2>
+    </section>
+
+    <section class="contact container">
+        <form class="form" action="#">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group input-div">
+                        <input id="name" class="form-control input-contact" type="text" placeholder="Nome" required="">
+                    </div>
+                    <div class="form-group input-div">
+                        <input id="email" class="form-control input-contact" type="email" placeholder="Email" minlength="5" maxlength="50" required="">
+                    </div>
+                    <div class="form-group input-div">
+                        <input id="phone" class="form-control input-contact" type="number" placeholder="Telefone" required="">
+                    </div>
+                    <div class="form-group input-div">
+                        <select id="subject" class="form-control" required="">
+                            <option selected="" disabled="">Selecione um assunto</option>
+                            <option value="Dúvidas">Dúvidas</option>
+                            <option value="Reclamações">Reclamações</option>
+                            <option value="Sugestões">Sugestões</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group mb-0">
+                        <textarea id="msg" class="form-control textarea" rows="8" placeholder="Mensagem" name="mensagem" maxlength="512" required=""></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="text-right">
+                <button class="btn btn-contact text-white" type="submit">ENVIAR</button>
+            </div>
+        </form>
+    </section>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.8685731770806!2d-42.5249942844996!3d-22.245064820186812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x97f53b7d1d661d%3A0x8546df88b7f17ffd!2sCentro%20Federal%20de%20Educa%C3%A7%C3%A3o%20Tecnol%C3%B3gica%20Celso%20Suckow%20da%20Fonseca%2C%20Campus%20Nova%20Friburgo!5e0!3m2!1spt-PT!2sbr!4v1604084275943!5m2!1spt-PT!2sbr"
+        width="100%" height="500px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">TRABALHO DE PROFICIÊNCIA - FUND. DA WEB</div>
+                <div class="col-md-6 text-left text-md-right">AGAINST COVID-19 | TODOS OS DIREITOS RESERVADOS</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $('.btn').submit(function() {
+        //
+    });
+</script>
+
+</html>
