@@ -147,7 +147,7 @@ $(function() {
                 $html += '<p><i class="fas fa-exclamation-circle" style="color:red;margin-right: 10px"></i>' + $json.cases + ' Ativos</p>';
                 $html += '<p><i class="fas fa-heartbeat" style="color:green;margin-right: 10px"></i>' + $json.recovered + ' Recuperados</p>';
                 $html += '<p><i class="fas fa-skull-crossbones" style="color:red;margin-right: 10px"></i>' + $json.deaths + ' Mortos</p>';
-                console.log($html);
+
                 $('.' + $array[$x]).append($html);
             }
         });
