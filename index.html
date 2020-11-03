@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Um projeto feito para a prova de proficiência da matéria de Design Web do curso de Sistemas de informação - CEFET/NF">
     <meta name="author" content="Juan Victor Oliveira - github.com/JuanvictorO">
-    <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="./assets/img/favicon.png">
     <title>Against Covid-19 - A web designer project</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
@@ -37,11 +37,11 @@
                         <a class="nav-link" href="views/prevencoes.html">Prevenções</a>
                     </li>
                     <li class="nav-item nav-text animated fadeIn">
-                        <a href="/views/noticias.html" class="nav-link">Notícias</a>
+                        <a href="views/noticias.html" class="nav-link">Notícias</a>
                     </li>
                     <li id="li-logo" class="nav-item animated fadeIn d-none d-lg-inline mx-5">
                         <a class="nav-link" href="index.html">
-                            <img id="logo" width="220px" src="./assets/img/logo.png" alt="Logo">
+                            <img id="logo" width="220px" src="./assets/img/logo.png" alt="Logo" title="Logo">
                         </a>
                     </li>
                     <li class="nav-item nav-text animated fadeIn">
@@ -58,7 +58,7 @@
     <div id="carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="./assets/img/higienize2.jpg" alt="First slide">
+                <img class="d-block w-100" src="./assets/img/higienize2.jpg" alt="Imagem de um homem lavando a mão, resignificando o cuidado com o corona vírus">
                 <div class="carousel-caption text-white">
                     <h4 class="font-weight-bold d-none d-md-block">Se proteja contra o corona vírus!</h4>
                     <h5 class="d-md-none mb-0">Proteja-se contra o corona!</h5>
@@ -68,7 +68,7 @@
             </div>
             <div class="carousel-item">
                 <a target="_blank" href="https://play.google.com/store/apps/details?id=br.gov.datasus.guardioes&hl=pt_BR">
-                    <img class="d-block w-100" src="./assets/img/aplicativo3.jpg" alt="First slide">
+                    <img class="d-block w-100" src="./assets/img/aplicativo3.jpg" alt="Imagem de um celular com o aplicativo do SUS">
                 </a>
                 <div class="carousel-caption color-2">
                     <h4 class="font-weight-bold d-none d-md-block">Acesse o aplicativo: "Coronavírus - SUS"</h4>
@@ -93,28 +93,36 @@
             <h2 class="title-buttons color-4">Acesse nossas funcionalidades!</h2>
             <div class="row">
                 <div class="col-md-3">
-                    <div class="rounded">
-                        <img class="img-fluid" src="assets/img/medical-insurance.png" alt="">
-                    </div>
-                    <p class="subtitle-button">Saiba como se proteger</p>
+                    <a href="./views/prevencoes.html">
+                        <div class="rounded">
+                            <img class="img-fluid" src="assets/img/medical-insurance.png" alt="Prevenções e dados importantes">
+                        </div>
+                        <p class="subtitle-button">Saiba como se proteger</p>
+                    </a>
                 </div>
                 <div class="col-md-3">
-                    <div class="rounded">
-                        <img class="img-fluid" src="assets/img/news.png" alt="">
-                    </div>
-                    <p class="subtitle-button">Fique por dentro das novidades</p>
+                    <a href="views/noticias.html">
+                        <div class="rounded">
+                            <img class="img-fluid" src="assets/img/news.png" alt="Notícias">
+                        </div>
+                        <p class="subtitle-button">Fique por dentro das novidades</p>
+                    </a>
                 </div>
                 <div class="col-md-3">
-                    <div class="rounded">
-                        <img class="img-fluid" src="assets/img/statistic.png" alt="">
-                    </div>
-                    <p class="subtitle-button">Veja os gráficos e estatísticas</p>
+                    <a href="./views/dados.html">
+                        <div class="rounded">
+                            <img class="img-fluid" src="assets/img/statistic.png" alt="Dados e estatísticas">
+                        </div>
+                        <p class="subtitle-button">Veja os gráficos e estatísticas</p>
+                    </a>
                 </div>
                 <div class="col-md-3">
-                    <div class="rounded">
-                        <img class="img-fluid" src="assets/img/contact.png" alt="">
-                    </div>
-                    <p class="subtitle-button">Envie-nos uma mensagem</p>
+                    <a href="./views/contato.html">
+                        <div class="rounded">
+                            <img class="img-fluid" src="assets/img/contact.png" alt="Contato">
+                        </div>
+                        <p class="subtitle-button">Envie-nos uma mensagem</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -125,22 +133,22 @@
                 <h2 class="title-parallax">Lorem Ipsum Leter sadj asdjf adsfjasdfj</h2>
                 <div class="row color-2">
                     <div class="col-lg-4">
-                        <div class="div-border-text-parallax">
-                            <img class="img-fluid" src="assets/img/covid19.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor vitae erat tincidunt congue pretium feugiat ipsum.</p>
-                        </div>
+                        <figure class="div-border-text-parallax">
+                            <img class="img-fluid" src="assets/img/covid19.jpg" alt="Imagem escrira 'covid-16'">
+                            <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor vitae erat tincidunt congue pretium feugiat ipsum.</figcaption>
+                        </figure>
                     </div>
                     <div class="col-lg-4">
-                        <div class="div-border-text-parallax">
-                            <img class="img-fluid" src="assets/img/covid19.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor vitae erat tincidunt congue pretium feugiat ipsum.</p>
-                        </div>
+                        <figure class="div-border-text-parallax">
+                            <img class="img-fluid" src="assets/img/covid19.jpg" alt="Imagem escrira 'covid-16'">
+                            <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor vitae erat tincidunt congue pretium feugiat ipsum.</figcaption>
+                        </figure>
                     </div>
                     <div class="col-lg-4">
-                        <div class="div-border-text-parallax">
-                            <img class="img-fluid" src="assets/img/covid19.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor vitae erat tincidunt congue pretium feugiat ipsum.</p>
-                        </div>
+                        <figure class="div-border-text-parallax">
+                            <img class="img-fluid" src="assets/img/covid19.jpg" alt="Imagem escrira 'covid-16'">
+                            <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor vitae erat tincidunt congue pretium feugiat ipsum.</figcaption>
+                        </figure>
                     </div>
                 </div>
                 <div class="div-button-parallax bk-color-2">
@@ -154,7 +162,7 @@
             <div class="row">
                 <div class="col-md-8 news-text">
                     <h2 class="title-news">Lorem Ipsum valor donor</h2>
-                    <img class="img-fluid img-news" src="assets/img/covid19.jpg">
+                    <img class="img-fluid img-news" src="assets/img/covid19.jpg" alt="Imagem escrira 'covid-16'">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor vitae erat tincidunt congue pretium feugiat ipsum. Vestibulum eu pretium lorem. Vivamus dapibus risus fringilla, hendrerit libero eget, venenatis elit. Nulla quis magna tortor.
                         Cras et aliquet risus. Pellentesque venenatis ut tellus sit amet placerat. Sed aliquam nulla vel leo cursus posuere. Donec aliquet blandit metus, id imperdiet nisl fringilla ut. Vestibulum pretium leo nec est sollicitudin, tristique
@@ -171,7 +179,7 @@
                     <h4>Outras notícias</h4>
                     <div class="row">
                         <div class="col-4">
-                            <img src="assets/img/human.jpg" alt="" class="img-fluid">
+                            <img src="assets/img/human.jpg" alt="Mulher usando máscara" class="img-fluid">
                         </div>
                         <div class="col-8">
                             <p class="title-sub-news">Maecenas auctor eros ac orci tincidunt, non dignissim massa pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus id vehicula tellus. Aenean at risus arcu. Aliquam vitae
@@ -180,7 +188,7 @@
                             </p>
                         </div>
                         <div class="col-4">
-                            <img src="assets/img/human.jpg" alt="" class="img-fluid">
+                            <img src="assets/img/human.jpg" alt="Mulher usando máscara" class="img-fluid">
                         </div>
                         <div class="col-8">
                             <p class="title-sub-news">Maecenas auctor eros ac orci tincidunt, non dignissim massa pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus id vehicula tellus. Aenean at risus arcu. Aliquam vitae
@@ -189,7 +197,7 @@
                             </p>
                         </div>
                         <div class="col-4">
-                            <img src="assets/img/human.jpg" alt="" class="img-fluid">
+                            <img src="assets/img/human.jpg" alt="Mulher usando máscara" class="img-fluid">
                         </div>
                         <div class="col-8">
                             <p class="title-sub-news">
@@ -201,7 +209,7 @@
                     </div>
                     <div class="publicity text-center">
                         <p>PUBLICIDADE</p>
-                        <img class="img-fluid" src="assets/img/frase.jpg" alt="">
+                        <img class="img-fluid" src="assets/img/frase.jpg" alt="O mundo está temporariamente fechado!">
                     </div>
                 </div>
             </div>
