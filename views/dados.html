@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Um projeto feito para a prova de proficiência da matéria de Design Web do curso de Sistemas de informação - CEFET/NF">
+    <meta name="author" content="Juan Victor Oliveira - github.com/JuanvictorO">
+    <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.png">
+    <title>Dados - Against Covid-19</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/dados.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- py-lg-3 py-2 px-1 px-md-3 -->
+    <header id="header" class="navbar navbar-expand-lg fixed-top py-0">
+        <div class="container">
+            <div class="text-left d-lg-none">
+                <a class="nav-link" href="../index.html">
+                    <img class="img-fluid" width="150px" src="../assets/img/logo.png" alt="Logo" title="Logo">
+                </a>
+            </div>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="animated collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-lg-center text-left mr-auto ml-auto px-3 px-md-0">
+                    <li class="nav-item nav-text animated fadeIn">
+                        <a class="nav-link" href="prevencoes.html">Prevenções</a>
+                    </li>
+                    <li class="nav-item nav-text animated fadeIn">
+                        <a href="noticias.html" class="nav-link">Notícias</a>
+                    </li>
+                    <li id="li-logo" class="nav-item animated fadeIn d-none d-lg-inline mx-5">
+                        <a class="nav-link" href="../index.html">
+                            <img id="logo" width="220px" src="../assets/img/logo.png" alt="Logo">
+                        </a>
+                    </li>
+                    <li class="nav-item nav-text animated fadeIn">
+                        <a class="nav-link" href="dados.html">Dados</a>
+                    </li>
+                    <li class="nav-item nav-text animated fadeIn">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="principal">
+        <div class="container">
+            <div class="graphic">
+                <p class="resume color-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur ullamcorper ante quis feugiat. Morbi magna ipsum, convallis et tortor in, lacinia ultricies neque. Aliquam et sapien odio. Pellentesque auctor finibus ante a
+                    fermentum. Nam ut consectetur lectus. Nulla consectetur eget nisl eget euismod. Vivamus viverra vitae libero sodales imperdiet. Sed et nulla vestibulum, auctor risus ut, semper orci. Morbi hendrerit dui id porta malesuada. In hac habitasse
+                    platea dictumst. Duis euismod tortor tellus, sit amet dignissim quam laoreet ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer dignissim ornare ipsum, eu luctus arcu.</p>
+                <h3 class="title-graphic color-1">Dados por país em tempo real</h3>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <canvas id="c-confirmed"></canvas>
+                    </div>
+                    <div class="col-md-6">
+                        <canvas id="c-deaths"></canvas>
+                    </div>
+                    <div class="map">
+                        <h3 class="title-map color-1">Mapa Mundial - coronavirus</h3>
+                        <iframe id="map-country" src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map"></iframe>
+                    </div>
+                </div>
+
+                <h3 class="title-graphic-2 color-1">Dados por estados do Brasil</h3>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <canvas id="u-confirmed"></canvas>
+                    </div>
+                    <div class="col-lg-6">
+                        <canvas id="u-deaths"></canvas>
+                    </div>
+                </div>
+                <p class="final color-1">Por fim, não deixe de dar uma passada nesse link:
+                    <a href="https://graphics.reuters.com/CHINA-HEALTH-MAP/0100B59S43G/index.html" target="_blank">www.graphics.reuters.com</a>. Ele disponibiliza um acompanhamento da disseminação do novo corona vírus de uma forma muito dinâmica e interessante
+                    e, tudo isso, em forma de mapa e gráficos.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">TRABALHO DE PROFICIÊNCIA - FUND. DA WEB</div>
+                <div class="col-lg-6 text-left text-md-right">AGAINST COVID-19 | TODOS OS DIREITOS RESERVADOS</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/line-cutter/line-cutter.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+<script src="../assets/js/dados.min.js"></script>
+
+</html>
