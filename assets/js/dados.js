@@ -38,8 +38,8 @@ var myChart = new Chart(ctx, {
                 'rgba(75, 192, 192, 1)',
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)',
-                'rgba(10, 91, 169, 0.2)',
-                'rgba(138, 26, 26, 0.2)'
+                'rgba(10, 91, 169, 1)',
+                'rgba(138, 26, 26, 1)'
             ],
             borderWidth: 1
         }]
@@ -80,8 +80,8 @@ var myChart1 = new Chart(ctx1, {
                 'rgba(75, 192, 192, 1)',
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)',
-                'rgba(10, 91, 169, 0.2)',
-                'rgba(138, 26, 26, 0.2)'
+                'rgba(10, 91, 169, 1)',
+                'rgba(138, 26, 26, 1)'
             ],
             borderWidth: 1
         }]
@@ -107,13 +107,10 @@ for ($x = 0; $x < 8; $x++) {
         url: "https://covid19-brazil-api.now.sh/api/report/v1/brazil/uf/" + uffs[$x],
         async: false,
         success: function(json) {
-            console.log(json);
             uf[$x] = json;
         }
     });
 }
-console.log(uffs);
-console.log(uf);
 
 var ctx2 = document.getElementById('u-confirmed');
 var myChart2 = new Chart(ctx2, {
@@ -140,8 +137,8 @@ var myChart2 = new Chart(ctx2, {
                 'rgba(75, 192, 192, 1)',
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)',
-                'rgba(10, 91, 169, 0.2)',
-                'rgba(138, 26, 26, 0.2)'
+                'rgba(10, 91, 169, 1)',
+                'rgba(138, 26, 26, 1)'
             ],
             borderWidth: 1
         }]
@@ -182,8 +179,8 @@ var myChart3 = new Chart(ctx3, {
                 'rgba(75, 192, 192, 1)',
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)',
-                'rgba(10, 91, 169, 0.2)',
-                'rgba(138, 26, 26, 0.2)'
+                'rgba(10, 91, 169, 1)',
+                'rgba(138, 26, 26, 1)'
             ],
             borderWidth: 1
         }]
